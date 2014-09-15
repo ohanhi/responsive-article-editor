@@ -1,0 +1,21 @@
+{
+  "name": "responsive-article-editor",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ohanhi/responsive-article-editor",
+  "authors": [
+    "Ossi Hanhinen <ossi.hanhinen@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "BSD (3-clause)",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jquery.cookie": "~1.4.1"
+  }
+}

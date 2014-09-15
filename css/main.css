@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#editor,
+#drawer {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.js-sortable-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.js-sortable-container li {
+  display: block;
+  background: #eee;
+  padding: .5em;
+  margin: .5em;
+}
