@@ -2,30 +2,61 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 11pt;
 }
-#editor,
-#drawer {
+h1 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+}
+.container {
   box-sizing: border-box;
   display: block;
   width: 50%;
   height: 100%;
+  padding: 0.5em;
   float: left;
 }
-
+.headline--ui {
+  padding: 0.5em 0;
+  margin: 0 0 0.5em;
+  border-bottom: thin silver solid;
+}
+.headline--ui h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
 .js-sortable-container ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.js-sortable-container li {
-  display: block;
-  background: #eee;
-  padding: .5em;
-  margin: .5em;
+.js-sortable-container p {
+  margin: 0;
+  padding: 0.5em 0;
 }
-
-.js-sortable-container li img {
+.ui-sortable-handle {
+  display: block;
+  background: white;
+  cursor: move;
+  margin-bottom: 1em;
+}
+.ui-sortable-handle:hover {
+  border: thin silver dashed;
+}
+.ui-sortable-helper {
+  border: thin silver dashed;
+  opacity: 0.7;
+  overflow: hidden;
+}
+.js-sortable-container img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+#drawer li {
+  clear: both;
 }
