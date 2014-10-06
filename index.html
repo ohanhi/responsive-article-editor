@@ -6,6 +6,7 @@
   <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
   <script src="libs/jquery-ui/jquery-ui.min.js"></script>
 
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
   <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.structure.min.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -45,9 +46,66 @@
     </header>
     <div id="drawer" class="js-sortable-container">
       <ul>
-        <li><img src="img/example-03.png" alt=""></li>
-        <li><img src="img/example-01.png" alt=""></li>
-        <li><img src="img/example-02.png" alt=""></li>
+        <li>
+          <img src="img/example-03.png" alt="">
+          <div class="toolbox">
+            <div class="toolbox__button" title="Position"><i class="fa fa-align-left"></i></div>
+            <nav class="toolbox__dropdown">
+              <a href="javascript:;" data-option="float-left">
+                <span class="state-icon fa fa-circle-o"></span>
+                <span class="description">Float left</span>
+              </a>
+              <a href="javascript:;" data-option="float-none">
+                <span class="state-icon fa fa-check-circle"></span>
+                <span class="description">Center</span>
+              </a>
+              <a href="javascript:;" data-option="float-right">
+                <span class="state-icon fa fa-circle-o"></span>
+                <span class="description">Float right</span>
+              </a>
+            </nav>
+          </div>
+        </li>
+        <li>
+          <img src="img/example-01.png" alt="">
+          <div class="toolbox">
+            <div class="toolbox__button" title="Position"><i class="fa fa-align-left"></i></div>
+            <nav class="toolbox__dropdown">
+              <a href="javascript:;" data-option="float-left">
+                <span class="state-icon fa fa-circle-o"></span>
+                <span class="description">Float left</span>
+              </a>
+              <a href="javascript:;" data-option="float-none">
+                <span class="state-icon fa fa-check-circle"></span>
+                <span class="description">Center</span>
+              </a>
+              <a href="javascript:;" data-option="float-right">
+                <span class="state-icon fa fa-circle-o"></span>
+                <span class="description">Float right</span>
+              </a>
+            </nav>
+          </div>
+        </li>
+        <li>
+          <img src="img/example-02.png" alt="">
+          <div class="toolbox">
+            <div class="toolbox__button" title="Position"><i class="fa fa-align-left"></i></div>
+            <nav class="toolbox__dropdown">
+              <a href="javascript:;" data-option="float-left">
+                <span class="state-icon fa fa-circle-o"></span>
+                <span class="description">Float left</span>
+              </a>
+              <a href="javascript:;" data-option="float-none">
+                <span class="state-icon fa fa-check-circle"></span>
+                <span class="description">Center</span>
+              </a>
+              <a href="javascript:;" data-option="float-right">
+                <span class="state-icon fa fa-circle-o"></span>
+                <span class="description">Float right</span>
+              </a>
+            </nav>
+          </div>
+        </li>
       </ul>
     </div>
   </section>
