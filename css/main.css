@@ -40,12 +40,11 @@ h1 {
 }
 .ui-sortable-handle {
   display: block;
-  background: white;
+  background: transparent;
   cursor: move;
   margin-bottom: 1em;
 }
 .ui-sortable-handle:hover {
-  background-color: #eee;
 }
 .ui-sortable-helper {
   background-color: #eee;
@@ -59,6 +58,7 @@ h1 {
 }
 #drawer li {
   clear: both;
+  overflow: hidden;
 }
 
 #editor li,
@@ -111,4 +111,18 @@ h1 {
 }
 .state-icon {
   margin-right: 0.5em;
+}
+
+/* Options */
+.option--float-left,
+.option--float-right {
+  z-index: 10;
+}
+.option--float-left {
+  float: left;
+  margin-right: 1em;
+}
+.option--float-right {
+  float: right;
+  margin-left: 1em;
 }
