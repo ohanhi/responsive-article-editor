@@ -43,8 +43,10 @@ h1 {
   background: transparent;
   cursor: move;
   margin-bottom: 1em;
+  background: #fff
 }
 .ui-sortable-handle:hover {
+  background-color: #eee;
 }
 .ui-sortable-helper {
   background-color: #eee;
