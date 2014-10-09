@@ -2,9 +2,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Open Sans', Arial, sans-serif;
-  line-height: 1.2;
-  font-size: 11pt;
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -57,20 +54,6 @@ body {
   line-height: 3rem;
 }
 
-.headline--ui--main h1,
-.headline--ui h2 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 0;
-}
-.headline--ui--main h1 {
-  font-weight: 100;
-}
-h1 {
-  font-family: 'Georgia', serif;
-  font-weight: normal;
-}
 .js-sortable-container ul {
   list-style-type: none;
   margin: 0;
@@ -187,7 +170,8 @@ header .toolbox {
 }
 
 /* Options */
-.option--pos-fill .content {
+.option--pos-fill .content,
+.option--pos-fill img {
   width: 100%;
 }
 .option--pos-left,
@@ -202,4 +186,39 @@ header .toolbox {
 .option--pos-right {
   float: right;
   margin-left: 1em;
+}
+
+/* Typography */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 11pt;
+}
+.headline--ui--main h1,
+.headline--ui h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+.headline--ui--main h1 {
+  font-weight: 100;
+}
+h1 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+}
+figure {
+  display: block;
+  margin: 0;
+}
+figcaption {
+  font-size: 0.9em;
+  margin: 0.5em 0;
+}
+.caption__byline {
+  display: block;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
 }
