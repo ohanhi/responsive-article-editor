@@ -1,5 +1,5 @@
 $(function(){
-  var VALID_PROPS = ['float'],
+  var VALID_PROPS = ['pos'],
     PREFIX = "option--";
 
   var removeWordsByPrefix = function(sentence, prefix) {
@@ -20,6 +20,9 @@ $(function(){
   });
 
   $(document).on('click', '.toolbox__dropdown a', function (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+
     var $this = $(this),
       $siblings = $(this).siblings(),
       $el = $this.closest('li'),
