@@ -35,9 +35,8 @@ body {
   overflow-y: auto;
   flex: 1;
 }
-#drawer .ui-sortable {
+.ui-placeholder {
   border: medium dashed #ddd;
-  padding: 0.5em;
 }
 
 .headline--ui,

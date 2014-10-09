@@ -1,6 +1,7 @@
 $(function(){
   var VALID_PROPS = ['pos'],
-    PREFIX = "option--";
+    PREFIX = "option--",
+    $body = $('body');
 
   var removeWordsByPrefix = function(sentence, prefix) {
     if (typeof sentence === "string" || typeof prefix === "string") {
@@ -10,18 +11,32 @@ $(function(){
     }
   };
 
+  var start = function (event, ui) {
+    $body.addClass('state-dragging');
+  }, stop =  function (event, ui) {
+    $body.removeClass('state-dragging');
+  };
+
 
   $('#editor ul').sortable({
-    connectWith: '#drawer ul'
+    connectWith: '#drawer ul',
+    start: start,
+    stop: stop,
+    forcePlaceholderSize: true,
+    placeholder: 'ui-placeholder'
   });
 
   $('#drawer ul').sortable({
-    connectWith: '#editor ul'
+    connectWith: '#editor ul',
+    start: start,
+    stop: stop,
+    forcePlaceholderSize: true,
+    placeholder: 'ui-placeholder'
   });
 
-  $(document).on('click', '.toolbox__dropdown a', function (evt) {
-    evt.preventDefault();
-    evt.stopPropagation();
+  $(document).on('click', '.toolbox__dropdown a', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
 
     var $this = $(this),
       $siblings = $(this).siblings(),
