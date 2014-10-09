@@ -40,4 +40,8 @@ $(function(){
       }
     });
   });
+
+  $(document).on('click', '#save-button', function (event) {
+    window.alert("Saving and previewing would happen now!");
+  });
 });
