@@ -101,7 +101,7 @@ body {
 header .toolbox {
   opacity: 1;
 }
-#save-button {
+header .toolbox__button {
   transition: all 0.2s;
   background: transparent;
   max-height: 100%;
@@ -109,7 +109,7 @@ header .toolbox {
   width: auto;
   padding: 0 0.5em;
 }
-#save-button:hover {
+header .toolbox__button:hover {
   background: #333;
   height: 3rem;
   line-height: 3rem;
@@ -159,7 +159,7 @@ header .toolbox {
   color: #fff;
   cursor: pointer;
   text-align: center;
-  display: block;
+  display: inline-block;
   width: 2.5em;
   height: 2.5em;
   line-height: 2.5em;
