@@ -56,7 +56,18 @@ $(function(){
     });
   });
 
-  $(document).on('click', '#save-button', function (event) {
-    window.alert("Saving and previewing would happen now!");
+  $(document).on('click', '.save-button', function (event) {
+    window.alert("Clicking this would "
+      +"\n1) Save your changes to the article structure ");
+  });
+
+  $(document).on('click', '.preview-button', function (event) {
+    window.alert("Clicking this would "
+      +"\n1) Open the preview in a new tab/window");
+  });
+
+  $(document).on('click', '.edit-button', function (event) {
+    window.alert("Clicking this would \n1) Ask \"Save your changes?\" (Save / Discard)"
+      +"\n2) Continue to Content editor");
   });
 });
