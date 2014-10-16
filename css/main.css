@@ -36,6 +36,10 @@ body {
   border: medium dashed #ddd;
 }
 
+.padded {
+  padding: 1em;
+}
+
 .headline--ui,
 .headline--ui--main {
   padding: 0 0.5em;
