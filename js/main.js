@@ -17,6 +17,17 @@ $(function(){
     $body.removeClass('state-dragging');
   };
 
+  var popup = function (url, width, height) {
+    var params = 'height='+height
+      +',width='+width
+      +',screenX=400'
+      +',screenY=200';
+    var newWindow = window.open(url, 'popup', params);
+    if (window.focus) {
+      newWindow.focus();
+    }
+    return false;
+  };
 
   $('#editor ul').sortable({
     connectWith: '#drawer ul',
@@ -62,8 +73,7 @@ $(function(){
   });
 
   $(document).on('click', '.preview-button', function (event) {
-    window.alert("Clicking this would "
-      +"\n1) Open the preview in a new tab/window");
+    popup('http://localhost:8080/app/issue.html#/20141029/kotimaa/5961', 320, 550);
   });
 
   $(document).on('click', '.edit-button', function (event) {
