@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+}
+.main, .sidebar {
+  box-sizing: border-box;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 70%;
+}
+.sidebar {
+  flex: 1 1 30%;
+}
+.container {
+  flex: 1;
+  display: flex;
+  padding: 0.5em;
+}
+.scroll-container {
+  overflow-y: auto;
+  flex: 1;
+}
+.ui-placeholder {
+  border: medium dashed #ddd;
+}
+
+.padded {
+  padding: 1em;
+}
+
+.headline--ui,
+.headline--ui--main {
+  padding: 0 0.5em;
+  margin: 0 0 0.5em;
+  background: #444;
+  color: #fff;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.headline--ui--main {
+  margin: 0;
+  background: #222;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.js-sortable-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.js-sortable-container p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+.ui-sortable-handle {
+  display: block;
+  background: transparent;
+  cursor: move;
+  margin-bottom: 1em;
+}
+.ui-sortable-handle:hover {
+  background-color: #efefef;
+}
+.ui-sortable-helper {
+  opacity: 0.7;
+  overflow: visible;
+}
+.js-sortable-container img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#drawer li {
+  clear: both;
+  overflow: visible;
+}
+
+#editor li,
+#drawer li {
+  position: relative;
+}
+.toolbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s;
+  z-index: 12;
+}
+header .toolbox {
+  opacity: 1;
+}
+header .toolbox__button {
+  transition: all 0.2s;
+  background: transparent;
+  max-height: 100%;
+  color: #fff;
+  width: auto;
+  padding: 0 0.5em;
+}
+header .toolbox__button:hover {
+  background: #333;
+  height: 3rem;
+  line-height: 3rem;
+}
+.button__icon {
+  display: inline-block;
+  font-size: 1.4em;
+  height: 3rem;
+  line-height: 3rem;
+}
+.button__description {
+  display: inline-block;
+  margin-left: 0.2em;
+  font-size: 1em;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.ui-sortable-handle:hover .toolbox {
+  opacity: 0.7;
+}
+.toolbox__dropdown {
+  display: none;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+.toolbox__dropdown a {
+  display: block;
+  padding: 1em 2em 1em 1em;
+  color: #fff;
+  background: #444;
+  text-decoration: none;
+}
+.toolbox__dropdown a:hover {
+  background: #222;
+}
+.ui-sortable-handle .toolbox:hover {
+  opacity: 1;
+}
+.toolbox:hover .toolbox__dropdown {
+  display: block;
+}
+.toolbox__button {
+  font-size: 1.2em;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  float: right;
+}
+.state-icon {
+  margin-right: 0.5em;
+}
+
+/* Options */
+.option--pos-fill .content,
+.option--pos-fill img {
+  width: 100%;
+}
+.option--pos-left,
+.option--pos-right {
+  z-index: 10;
+  max-width: 30%;
+}
+.option--pos-left {
+  float: left;
+  margin-right: 1em;
+}
+.option--pos-right {
+  float: right;
+  margin-left: 1em;
+}
+
+/* Typography */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 11pt;
+}
+.headline--ui--main h1,
+.headline--ui h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+.headline--ui--main h1 {
+  font-weight: 100;
+}
+h1 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+}
+figure {
+  display: block;
+  margin: 0;
+}
+figcaption {
+  font-size: 0.9em;
+  margin: 0.5em 0;
+}
+.caption__byline {
+  display: block;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
